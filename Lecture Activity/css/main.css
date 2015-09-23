@@ -7,13 +7,20 @@ h1 {
   color: #00FFFF;
 }
 
+img {
+  margin-left: 2em;
+}
 main {
   background-color: yellow;
   color: #004C1A;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 ul {
-  list-style: upper-roman;
+  list-style: lower-greek;
+  font-size: 1.75em;
+  margin-left: 1em;
 }
 
 footer {
