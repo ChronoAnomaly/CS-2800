@@ -1,0 +1,26 @@
+* {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+header {
+  text-align: center;
+}
+
+main h1 {
+  color: green;
+}
+
+main>ul li {
+  font-weight: bold;
+}
+
+ol>ul li {
+  font-style: italic;
+}
