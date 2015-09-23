@@ -21,6 +21,8 @@ ul {
   list-style: lower-greek;
   font-size: 1.75em;
   margin-left: 1em;
+  border: 2px;
+  border-style: dashed;
 }
 
 footer {
