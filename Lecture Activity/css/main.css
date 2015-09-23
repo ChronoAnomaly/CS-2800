@@ -1,0 +1,21 @@
+header {
+  background-color: red;
+  color: blue;
+}
+
+h1 {
+  color: #00FFFF;
+}
+
+main {
+  background-color: yellow;
+  color: #004C1A;
+}
+
+ul {
+  list-style: upper-roman;
+}
+
+footer {
+  background-color: green;
+}
