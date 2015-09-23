@@ -1,18 +1,22 @@
 * {
   font-family: Arial, sans-serif;
 }
+/* #1 */
 h1 {
   color: red;
 }
 
+/* #2 */
 h2 {
   color: blue;
 }
 
+/* #3 */
 header {
   text-align: center;
 }
 
+/* #4 */
 main h1 {
   color: green;
 }
@@ -23,4 +27,24 @@ main>ul li {
 
 ol>ul li {
   font-style: italic;
+}
+
+ol>li {
+  color: blue;
+}
+
+h1+p::first-letter {
+  font-size: 150%;
+}
+
+main h2:last-of-type {
+  background-color: yellow;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 1.5em;
+}
+
+p:last-of-type {
+  background-color: pink;
 }
