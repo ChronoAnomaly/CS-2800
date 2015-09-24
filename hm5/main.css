@@ -1,67 +1,75 @@
-/* #1 */
+/* Brett Worley
+ * CS-2800-01
+ * Assignment #5
+*/
+
+/* #1 Style all h1 headings red */
 h1 {
   color: red;
 }
 
-/* #2 */
+/* #2 Style all h2 headings blue */
 h2 {
   color: blue;
 }
 
-/* #3 */
+/* #3 Center the text in the header */
 header {
   text-align: center;
 }
 
-/* #4 */
+/* #4 Style the h1 headings in main green */
 main h1 {
   color: green;
 }
 
-/* #5 */
+/* #5 Style the font of the first unordered list to bold */
 main>ul li {
   font-weight: bold;
 }
 
-/* #6 */
+/* #6 Style the font of the inner unordered list to italics */
 ol>ul li {
   font-style: italic;
 }
 
-/* #7 */
+/* #7 Style the outer unordered list to blue */
 ol>li {
   color: blue;
 }
 
-/* #8 */
+/* #8 Change the family of font for the entire page */
 * {
   font-family: Arial, sans-serif;
 }
 
-/* #9 */
+/* #9 Increase the size of the first letter of the first paragraph following a h1 heading */
 h1+p::first-letter {
   font-size: 150%;
 }
 
-/* #10 */
+/* #10 Change the background color of the last paragraph on the page */
 p:last-of-type {
   background-color: pink;
 }
 
-/* #11 */
+/* #11 Change the background color of the last h2 heading */
 main h2:last-of-type {
   background-color: yellow;
 }
-/* #12 */
+
+/* #12 Add padding around the last h2 heading */
 main h2:last-of-type {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* #13 */
+
+/* #13 Change the padding of the last h2 heading */
 main h2:last-of-type {
   padding: 20px;
 }
-/* #14 */
+
+/* #14 Change the margins of the last h2 heading */
 main h2:last-of-type {
   margin: 1.5em;
 }
