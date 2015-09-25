@@ -64,9 +64,9 @@ main h2:last-of-type {
   margin-bottom: 20px;
 }
 
-/* #13 Change the padding of the last h2 heading */
+/* #13 Set a border for the last h2 heading */
 main h2:last-of-type {
-  padding: 20px;
+  border: 2px solid blue;
 }
 
 /* #14 Change the margins of the last h2 heading */
