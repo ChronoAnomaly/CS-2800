@@ -149,12 +149,16 @@ main {
   -moz-column-span: 1;
   -webkit-column-span: 1;
   column-span: 1;
-  background-color: yellow;
+  -moz-column-width: 50%;
+  -webkit-column-width: 50%;
+  column-width: 50%;
 }
 
 .right_column {
   -moz-column-span: 2;
   -webkit-column-span: 2;
   column-span: 2;
-  background-color: green;
+  -moz-column-width: 50%;
+  -webkit-column-width: 50%;
+  column-width: 50%;
 }*/
