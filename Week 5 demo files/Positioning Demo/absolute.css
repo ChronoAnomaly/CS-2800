@@ -1,0 +1,19 @@
+
+body {
+  border: 1px solid red;
+  position: relative;    /* containg block of absolute positoned element must be set */
+  width: 700px;
+}
+
+main {
+  width: 450px;
+  border: 1px solid green;
+}
+
+aside {
+  width: 150px;
+  border: 1px solid blue;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}

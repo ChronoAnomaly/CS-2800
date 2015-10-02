@@ -1,0 +1,17 @@
+body {
+  width: 700px;
+  border: 1px solid red;
+}
+
+main {
+  width: 400px;
+  border: 1px solid green;
+}
+
+aside {
+  width: 150px;
+  border: 1px solid blue;
+  position: fixed;
+  right: 30px;
+  top: 50px;
+}

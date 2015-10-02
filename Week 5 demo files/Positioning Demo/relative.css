@@ -1,0 +1,9 @@
+
+
+aside {
+  position: relative;  /* relative to contaiing block (in this case, body) */
+  top: 100px;
+  left: 50px;
+}
+
+

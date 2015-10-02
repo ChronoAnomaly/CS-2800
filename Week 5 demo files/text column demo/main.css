@@ -1,0 +1,29 @@
+
+article {
+   -webkit-column-count: 4;    /* for Chrome, Opera, and Safari */
+      -moz-column-count: 4;    /* for Firefox */
+           column-count: 4;    /* for IE 10+ */
+  }
+
+  
+article {
+  -webkit-column-width: 150px;    /* for Chrome, Opera, and Safari */
+     -moz-column-width: 150px;    /* for Firefox */
+          column-width: 150px;    /* for IE 10+ */
+}
+
+article {
+    -webkit-column-gap:  100px; 
+       -moz-column-gap:  100px;    
+            column-gap:  100px; 
+                
+   -webkit-column-rule:  1px solid blue;
+      -moz-column-rule:  1px solid blue;  
+           column-rule:  1px solid blue;  
+      
+
+
+ 
+
+
+

@@ -1,0 +1,130 @@
+/**********************************
+STYLE RULES FOR ALL PAGES
+***********************************/
+
+/* all body text is Open Sans, light grey background, blue text */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;  
+  color: blue;
+  width: 960px;
+}
+
+/* no underlining on links */
+a {
+  text-decoration: none;
+}
+
+
+/**********************************
+HEADER
+***********************************/
+
+/* header is a dark blue background */
+header {
+  background: #00246b;
+}
+
+/* center image */
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* header text color is maize; text is centered */
+header h1, h2 {
+  color: #ffe86c;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Changa One', sans-serif;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+header h2 {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+
+/**********************************
+NAVIGATION BAR
+***********************************/
+
+/* nav bar background matches header border */
+header nav {
+  background: #0099ff;
+}
+
+header nav li {
+  text-align: center;
+  list-style-type: none; 
+}
+
+
+/* nav link color is maize; visited links do not change color */
+header nav a, header nav a:visited {
+  color: #00246b;
+  font-weight: 800;
+}
+
+
+/* selected or hovered nav link is maize*/
+header nav a.selected, header nav a:hover {
+  color: #ffe86c;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  color: black;
+  clear: left;
+}
+
+footer .social-icon {
+  width: 20px;
+  height: 20px;  
+  color: #ccc;
+}
+
+/**********************************
+CENTER FIGURES ON PAGE
+***********************************/
+
+/* center the figures on the page */
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+/* caption should not exceed width of image */
+figcaption {
+  width: 300px;
+  text-align: center;
+}
+
+
+
+/******************************************
+ STYLE FIGURE CAPTIONS TO RIGHT OF PICTURE
+******************************************/
+
+/* the following works in firefox but
+   puts captions above figure in Chrome */
+figure {
+  display: table;
+}
+figcaption {
+  display: table-caption;
+  caption-side: right;
+}
+
