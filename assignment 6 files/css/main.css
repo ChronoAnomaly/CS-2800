@@ -131,7 +131,7 @@ CREATE LEFT and RIGHT COLUMNS
 }
 
 .right_column {
-  float: left;
+  float: right;
   width: 50%;
 }
 
