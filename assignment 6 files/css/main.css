@@ -60,11 +60,6 @@ header nav {
   background: #0099ff;
 }
 
-/* Remove the padding that the ul element automatically gets */
-header nav ul {
-  padding-left: 0;
-}
-
 header nav li {
   text-align: center;
   list-style-type: none; 
@@ -134,31 +129,3 @@ CREATE LEFT and RIGHT COLUMNS
   float: right;
   width: 50%;
 }
-
-/*
-main {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2;
-  -moz-column-rule: 2px solid black;
-  -webkit-column-rule: 2px solid black;
-  column-rule: 2px solid black;
-}
-
-.left_column {
-  -moz-column-span: 1;
-  -webkit-column-span: 1;
-  column-span: 1;
-  -moz-column-width: 50%;
-  -webkit-column-width: 50%;
-  column-width: 50%;
-}
-
-.right_column {
-  -moz-column-span: 2;
-  -webkit-column-span: 2;
-  column-span: 2;
-  -moz-column-width: 50%;
-  -webkit-column-width: 50%;
-  column-width: 50%;
-}*/
