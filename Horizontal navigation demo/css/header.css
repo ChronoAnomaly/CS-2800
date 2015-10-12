@@ -1,0 +1,30 @@
+header {
+  background-color: #ff9;
+}
+
+.current  {
+  background-color: cyan;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 50px;
+}
+
+nav li ul {
+	display: none;
+	position: absolute;
+}
+
+nav ul li:hover ul {
+	display: block;
+	background-color: #ddd;
+}
+
+nav ul ul li {
+	display: block;
+}
+
+main :first-child {
+	margin-top: 1.5em;
+}

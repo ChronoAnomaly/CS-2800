@@ -1,0 +1,16 @@
+h1 {
+  font-size: 140%;
+  margin: 0em;
+}
+
+main ul:first-of-type {
+  list-style: square;
+}
+
+main ol {
+  list-style: upper-roman;
+}
+
+main ul:last-of-type {
+  list-style-image: url("https://developer.mozilla.org/samples/cssref/list-style/starsolid.gif");
+}
