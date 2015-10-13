@@ -52,9 +52,15 @@
       <!-- Link to another part of this page -->
       <li><a href="#top">Back to top.</a></li>
       <!-- Link to an audio file -->
-      <li><audio controls><source src="http://www.nooooooooooooooo.com/nooo.mp3" type="audio/mpeg"></audio></li>
+      <li><audio controls>
+        <source src="http://www.nooooooooooooooo.com/nooo.ogg" type="audio/ogg" />
+        <source src="http://www.nooooooooooooooo.com/nooo.mp3" type="audio/mpeg">
+        <source src="http://www.nooooooooooooooo.com/nooo.mp4" type="audio/mp4" />
+      </audio></li>
       <!-- Link to a video file -->
-      <li></li>
+      <!-- In order to link a video from Youtube, I needed to use the iframe element. With trying to use the video tag, it was coming up
+      with errors about an unsupported/unknown type. -->
+      <li><iframe width="560" height="315" src="https://www.youtube.com/embed/G2_Q9FoD-oQ" frameborder="0" allowfullscreen></iframe></li>
     </ul>
   </main>
 </body>
