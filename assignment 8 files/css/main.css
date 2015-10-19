@@ -1,0 +1,126 @@
+/**********************************
+STYLE RULES FOR ALL PAGES
+***********************************/
+
+/* all body text is Open Sans, light grey background, blue text */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;  
+  color: blue;
+  width: 1200px;
+}
+
+/* no underlining on links */
+a {
+  text-decoration: none;
+}
+
+
+/**********************************
+HEADER
+***********************************/
+
+/* header is a dark blue background */
+header {
+  width: 1080px;
+  background: #00246b;
+  padding-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* center image */
+header img {
+   display: block;
+   width: 120px;
+   max-width: 150px;  /* do not change this line */
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 3px;
+}
+
+/* header text color is maize; text is centered */
+header h1, h2 {
+  color: #ffe86c;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Changa One', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+/**********************************
+NAVIGATION BAR
+***********************************/
+
+/* nav bar background matches header border */
+header nav {
+  background: #0099ff; 
+}
+
+header nav ul { 
+  list-style-type: none; 
+  padding-left: 0;
+  text-align: center;
+}
+
+
+/* nav link color is maize; visited links do not change color */
+header nav a, header nav a:visited {
+  color: #00246b;
+  font-weight: 800;
+}
+
+
+/* selected or hovered nav link is maize*/
+header nav a.selected, header nav a:hover {
+  color: #ffe86c;
+}
+
+
+/**********************************
+FIGURES and CAPTIONS
+***********************************/
+
+/* center the figures on the page */
+figure {
+  width: 480px;
+  max-width: 300px;   /* do not change this line */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  text-align: center;
+}
+
+figcaption {
+  width: 100%;
+  text-align: center;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  clear: left;
+}
+
+footer .social-icon {
+  display: inline;
+  width: 24px;
+  height: 24px;  
+  color: #ccc;
+}
+
