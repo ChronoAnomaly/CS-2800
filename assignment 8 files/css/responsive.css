@@ -1,0 +1,24 @@
+@media only screen and (min-width: 640px) {
+
+  .left_column {
+    float: left;
+    width: 50%;
+  }
+
+  .right_column {
+    float: right;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  header nav ul li {
+    display: inline-block;
+  }
+
+  header nav {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}

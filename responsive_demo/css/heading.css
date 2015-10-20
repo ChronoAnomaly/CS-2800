@@ -1,0 +1,69 @@
+
+/**********************************
+ALL PAGES - HEADING (MOBILE-FIRST)
+***********************************/
+
+
+header {
+  position: relative;
+  width: 100%;
+  padding: 2% 0% 0%;
+}
+
+/* image and header on same line */
+header img {
+  position: absolute;   /* can be beside headings without affecting centering */
+  width: 4%;
+  height: auto;  
+  min-width: 30px;
+  margin-top: 2%;
+  padding-left: 2%;
+}
+
+/* main heading has extra bold, green text */
+header h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: #006F53; 
+  margin: 0 auto;
+}
+
+
+/* no underline on header links */
+header a {
+  text-decoration: none;
+}
+
+
+/**********************************
+HOME-PAGE MAIN NAVIGATION
+***********************************/
+
+/* navigation background is green */
+nav {
+  background: #006F53;
+  text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  padding: 1% 0;  
+}
+
+nav a{
+  font-weight: bold;
+  padding: 2% 0%;       /* creates larger clickable area */
+  line-height: 1.5em;   
+}
+
+/* nav links are gold even after visited */
+nav  a, nav a:visited{
+  color: #E9AF10;
+}
+
+/* selected or hovered navigation links are white */
+nav a.selected, nav a:hover {
+  color: #fff;
+}
+

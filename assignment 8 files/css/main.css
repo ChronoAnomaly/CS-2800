@@ -7,7 +7,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;  
   color: blue;
-  width: 1200px;
+  width: 100%;
 }
 
 /* no underlining on links */
@@ -22,9 +22,9 @@ HEADER
 
 /* header is a dark blue background */
 header {
-  width: 1080px;
+  width: 90%;
   background: #00246b;
-  padding-top: 12px;
+  padding-top: 1%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,11 +32,11 @@ header {
 /* center image */
 header img {
    display: block;
-   width: 120px;
+   width: 10%;
    max-width: 150px;  /* do not change this line */
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 3px;
+   margin-bottom: .25%;
 }
 
 /* header text color is maize; text is centered */
@@ -47,12 +47,12 @@ header h1, h2 {
 
 header h1 {
   font-family: 'Changa One', sans-serif;
-  font-size: 32px;
+  font-size: 2em;
   font-weight: bold;
 }
 
 header h2 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: normal;
 }
 
@@ -92,11 +92,11 @@ FIGURES and CAPTIONS
 
 /* center the figures on the page */
 figure {
-  width: 480px;
+  width: 40%;
   max-width: 300px;   /* do not change this line */
   margin-left: auto;
   margin-right: auto;
-  font-size: 14px;
+  font-size: .875em;
   text-align: center;
 }
 
@@ -106,12 +106,13 @@ figcaption {
 }
 
 
+
 /**********************************
 FOOTER
 ***********************************/
 
 footer {
-  font-size: 12px;
+  font-size: .75em;
   text-align: center;
   color: black;
   clear: left;
@@ -119,8 +120,8 @@ footer {
 
 footer .social-icon {
   display: inline;
-  width: 24px;
-  height: 24px;  
+  width: 1.5em;
+  height: 1.5em;  
   color: #ccc;
 }
 

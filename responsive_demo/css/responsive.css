@@ -1,0 +1,86 @@
+/* the styles on this sheet cascade; normal style is applied until the first breakpoint
+   that style applies until overridden by the second breakpoint is reached, etc. */
+
+
+
+/* large tablets and small desktops -- three columns for main content */
+@media only screen and (min-width: 640px) {
+
+  main img {   
+    display: block;  
+    width: 90%;
+    max-width: 400px;
+  }	
+ 
+ 
+  /* threecolumn layout */  
+  main li {
+    font-size: 1em;
+    width: 28%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: left; 
+  }  
+	
+  /* every 4th item in left column clears the information above */
+	main li:nth-child(3n + 4) {
+	  clear: left;
+	}  
+  
+  /* set bottom margin for all items */
+  main li {
+    margin-bottom: 5%;
+  }
+  
+  footer {
+    clear: both;
+  }
+     
+}  /* end media query */
+
+
+
+/* Desktop - picture on left; caption and text on right; 1-line nav menu*/
+@media only screen and (min-width: 960px) { 
+
+	nav  li{
+	  display: inline-block;
+	}
+  
+  nav li:not(:last-child) {
+    padding-right: 5%;
+  }
+  
+  
+  /* heading is on right */
+  header h1 {
+    text-align: right;
+    margin-right: 20px;
+  }
+    
+  /* items are full width */
+	main li {
+    width: 100%;
+	  clear: none;
+	}
+ 
+  /* size images to be left of text */ 
+  main li img {
+    width: 15%;
+    height: auto;
+    float: left;
+    position: relative;
+    margin-top: 2%;
+    clear: right;
+  }
+  
+  /* text is on right */
+  main li p, main li h2 {
+    width: 82%;
+    float: right;
+    margin-top: .5%;
+  }
+  
+}  /* end media query */
+
+

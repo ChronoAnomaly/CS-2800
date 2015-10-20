@@ -1,0 +1,86 @@
+
+
+/**********************************
+MAIN - BODY 
+***********************************/
+
+/* body of all pages has light grey background and green text  */
+body {  
+  color: #006F53; 
+  background-color: #eee; 
+  max-width: 960px;
+  margin: 0 auto;     
+  padding: 0;
+}
+
+
+/**********************************
+HOME PAGE - all main items
+***********************************/
+
+main {
+  width: 90%;
+  font-size: .85em;
+  margin: 0 auto; 
+}
+
+main h2 {
+  margin-top: 1.5em;
+}
+
+
+main ul {
+  list-style: none;  /* remove bullet points */
+  padding-left: 0;
+}
+
+/* main anchor items are green with no underlining */
+main a {
+  color: #006F53; 
+  text-decoration: none; 
+}
+
+main img {
+  border: 1.5px solid #000;
+  display: none;  /* don't display on mobile */
+}
+
+
+
+/**********************************
+HOME PAGE - FOOTER
+***********************************/
+
+/* footer background is gold; text is green */
+footer {
+  font-size: 0.85em;
+  width: 100%;  
+  padding: .5% 0% 1%;
+  background-color: #E9AF10;
+  color: #006F53;
+  text-align: center; 
+  margin-top: 8%;
+}
+
+/* footer hovered links are light grey */
+footer a:hover {
+  color: #fff;
+}
+
+/* footer links are blue */
+footer a {
+  color: blue;
+  line-height: 1.7em;
+  text-decoration: none;
+}
+
+footer li {
+  display inline;
+  list-style: none;
+}
+
+footer img {
+  vertical-align: middle;
+}
+
+

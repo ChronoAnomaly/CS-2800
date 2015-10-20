@@ -1,0 +1,20 @@
+
+/**********************************
+SUB PAGES 
+***********************************/
+
+/* body of all pages has light grey background and green text  */
+body {  
+  color: #006F53; 
+  background-color: #eee; 
+  max-width: 960px;
+  margin: 0 auto;     
+  padding: 0;
+}
+
+
+main {
+  width: 90%;
+  font-size: .85em;
+  margin: 0 auto; 
+}
