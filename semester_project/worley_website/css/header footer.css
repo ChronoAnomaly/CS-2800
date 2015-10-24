@@ -1,6 +1,11 @@
 
 
 
+
+/****************************
+      Header section
+****************************/
+
 header {
   position: relative;
   width: 100%;
@@ -16,7 +21,7 @@ header h1 {
 
 
 /****************************
-  Navagation
+      Navigation
 ****************************/
 
 header nav {
@@ -28,3 +33,21 @@ header nav ul {
   list-style-type: none;
   padding: 0;
 }
+
+
+
+
+
+/****************************
+      Footer section
+****************************/
+
+footer {
+  font-size: 0.8em;
+  width: 100%;
+  background: #FAAB41;
+  text-align: center;
+  padding: 1.2% 0% 1%;
+}
+
+footer li { list-style: none; }
