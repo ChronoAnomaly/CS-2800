@@ -1,0 +1,30 @@
+
+
+
+header {
+  position: relative;
+  width: 100%;
+  padding: 2% 0% 0%;
+}
+
+header h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/****************************
+  Navagation
+****************************/
+
+header nav {
+  background: #FAAB41;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
