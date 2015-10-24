@@ -2,14 +2,30 @@
 
 
 
-/****************************
+/**************************************
       Header section
-****************************/
+**************************************/
 
 header {
   position: relative;
   width: 100%;
   padding: 2% 0% 0%;
+}
+
+header img {
+  position: absolute;
+  width: 2%;
+  min-width: 32px;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header nav a.selected, header nav a:hover {
+  color: #60FB67;
 }
 
 header h1 {
@@ -20,9 +36,9 @@ header h1 {
 }
 
 
-/****************************
+/**************************************
       Navigation
-****************************/
+**************************************/
 
 header nav {
   background: #FAAB41;
@@ -38,9 +54,9 @@ header nav ul {
 
 
 
-/****************************
+/**************************************
       Footer section
-****************************/
+**************************************/
 
 footer {
   font-size: 0.8em;
@@ -51,3 +67,20 @@ footer {
 }
 
 footer li { list-style: none; }
+
+
+/**************************************
+      Responsive sections
+**************************************/
+
+@media only screen and (min-width: 960px) {
+
+  header nav li {
+    display: inline-block;
+  }
+
+  header h1 {
+    text-align: right;
+    margin-right: 4%;
+  }
+}
