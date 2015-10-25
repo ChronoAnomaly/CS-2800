@@ -16,6 +16,7 @@ body {
 **************************************/
 
 main h2 , main p {
+  font-size: 1.35em;
   margin: 1%;
   padding: 0;
 }
@@ -37,11 +38,38 @@ main img {
 /* Tablet and small desktop */
 @media only screen and (min-width: 640px) {
 
+main img {
+  width: 75%;
+  max-width: 500px;
+  display: block;
+  margin-bottom: 5%;
+}
+
+
+main {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 3em;
+  -webkit-column-gap: 3em;
+  column-gap: 3em;
+}
+
 
 }
 
 /* Desktop */
 @media only screen and (min-width: 960px) {
 
+main {
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+
+main img {
+  width: 20%;
+  margin-bottom: 2%;
+}
 
 }
