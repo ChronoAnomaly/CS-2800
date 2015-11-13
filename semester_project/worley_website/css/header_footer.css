@@ -1,7 +1,6 @@
 
 
 
-
 /**************************************
       Header section
 **************************************/
@@ -15,9 +14,18 @@ header {
 header img {
   position: absolute;
   width: 2%;
+  height: auto;
   min-width: 32px;
   margin-left: 2%;
   margin-top: 1%;
+}
+
+header h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 header a {
@@ -27,14 +35,6 @@ header a {
 header nav a.selected, header nav a:hover {
   color: #60FB67;
 }
-
-header h1 {
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 auto;
-}
-
 
 /**************************************
       Navigation
