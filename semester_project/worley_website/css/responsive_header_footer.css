@@ -1,0 +1,22 @@
+
+/**************************************
+      Responsive sections
+**************************************/
+
+@media only screen and (min-width: 960px) {
+
+  header nav li {
+    display: inline-block;
+    padding: 0.5em;
+    border: 2px solid #a21616;
+  }
+
+  header h1 {
+    text-align: right;
+    margin-right: 4%;
+  }
+
+  header img {
+    margin-left: 1%;
+  }
+}
