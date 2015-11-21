@@ -23,7 +23,7 @@ main h2 , main p {
 
 main p { font-size: 0.95em; }
 
-main img {
+main ul img {
   display: block;
   width: 75%;
   padding: 1em 0;

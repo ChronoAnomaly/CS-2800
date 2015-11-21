@@ -6,6 +6,9 @@
 /* Tablet and small desktop */
 @media only screen and (min-width: 640px) {
 
+main ul img {
+  width: 50%;
+}
 
 }
 
@@ -13,5 +16,9 @@
 
 /* Desktop */
 @media only screen and (min-width: 960px) {
+
+main ul img {
+  width: 40%;
+}
 
 }
