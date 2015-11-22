@@ -6,7 +6,6 @@
 body {
   background-color: #E9E9E9;
   max-width: 1200px;
-
 }
 
 
@@ -39,4 +38,17 @@ main ul img {
   background-image: url("../images/422px-Linked_List.png");
   width: 422px;
   height: 133px;
+}
+
+
+/**************************************
+      Table content section
+**************************************/
+
+main table {
+  border: 1px solid black;
+}
+
+main td {
+  border: 1px solid black;
 }
