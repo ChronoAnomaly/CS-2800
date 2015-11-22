@@ -29,3 +29,14 @@ main ul img {
   padding: 1em 0;
 }
 
+#rolling {
+  background-image: url("../images/408px-Singly-linked-list.png");
+  width: 408px;
+  height: 41px;
+}
+
+#rolling:hover {
+  background-image: url("../images/422px-Linked_List.png");
+  width: 422px;
+  height: 133px;
+}
