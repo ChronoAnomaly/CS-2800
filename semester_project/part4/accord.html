@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <title>Accordion Widget</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-    alert("DOM is loaded");
     $( "#accordion" ).accordion( {
       heightStyle: "content",
       collapsible: true
@@ -17,60 +17,48 @@
   });
 
   </script>
-  <script type="text/javascript">$(document).ready(function() {alert("WE GOTTA DOM");});</script>
-
 </head>
 <body>
-  <h1>Accordion Widget Page</h1>
-
-<div id="accordion">
-  <h3>Section 1</h3>
-  <div>
-    <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    </p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
-    </p>
-    <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
-    </p>
-  </div>
-</div>
+  <header>
+    <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a>   Javascript</h1>
+    
+  </header>
+  <main>
+    <div id="accordion">
+      <h3>What JavaScript can do for you</h3>
+      <div>
+        <ul>
+          <li>JavaScript is very easy to implement. All you need to do is put your code in the HTML document and tell the browser that it is JavaScript.</li>
+          <li>JavaScript allows you to create highly responsive interfaces that improve the user experience and provide dynamic functionality, without having to wait for the server to react and show another page.</li>
+          <li>JavaScript can test for what is possible in your browser and react accordingly.</li>
+          <li>JavaScript can load content into the document if and when the user needs it, without reloading the entire page</li>
+        </ul>
+      </div>
+      <h3>Uses of scripting</h3>
+      <div>
+        <p>Javascript enables scripting on the client side of a user's browser. It can be used to validate information (such as form data a user
+          is filling out) to check everything is correct before sending the information to the server. This saves time by cutting out the server from needing
+          to verify the data it receives.</p>
+        <p>It is also used to dynamically interact with a website. It can either generate or edit content on the page based on specific actions taken by
+          the user.</p>
+      </div>
+      <h3>Widely used</h3>
+      <div>
+        <p>Javascipt is very popular and fairly easy to use, thus it is in many of today's websites. Due to its popularity, many extensions have
+          been developed to add it or improve features. </p>
+      </div>
+      <h3>Benefits</h3>
+      <div>
+        <ul>
+          <li>Lightweight</li>
+          <li>Free</li>
+          <li>Minimal code</li>
+          <li>Cross-browser compatible</li>
+          <li>Many useful extensions, such as jQuery and its plug-ins</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
