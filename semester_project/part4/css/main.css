@@ -11,3 +11,9 @@ header img {
   margin-left: 2%;
   margin-top: 1%;
 }
+
+pre {
+  border: 1px black dotted;
+  font-size: .8em;
+  padding-left: 1em;
+}

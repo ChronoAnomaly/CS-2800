@@ -17,25 +17,134 @@
 </head>
 <body>
   <header>
-    <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a>   Tabs Widget Page</h1>
+    <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a>   Algorithms</h1>
     
   </header>
   <main>
     <div id="tabs">
       <ul>
-        <li><a href="#tabs-1">Nunc tincidunt</a></li>
-        <li><a href="#tabs-2">Proin dolor</a></li>
-        <li><a href="#tabs-3">Aenean lacinia</a></li>
+        <li><a href="#tabs-1">Insertion sort</a></li>
+        <li><a href="#tabs-2">Merge sort</a></li>
+        <li><a href="#tabs-3">Quick sort</a></li>
       </ul>
       <div id="tabs-1">
-        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        <p>Insertion sort is a simple sorting algorithm that is relatively efficient for small lists and mostly sorted lists, and is often used as part of more
+        sophisticated algorithms. It works by taking elements from the list one by one and inserting them in their correct position into a new sorted list. 
+        In arrays, the new list and the remaining elements can share the array's space, but insertion is expensive, requiring shifting all following 
+        elements over by one.</p>
+        <p>Below is an example of insertion sort in C.</p>
+        <pre>struct LIST * SortList1(struct LIST * pList) {
+    // zero or one element in list
+    if(pList == NULL || pList->pNext == NULL)
+        return pList;
+    // head is the first element of resulting sorted list
+    struct LIST * head = NULL;
+    while(pList != NULL) {
+        struct LIST * current = pList;
+        pList = pList->pNext;
+        if(head == NULL || current->iValue < head->iValue) {
+            // insert into the head of the sorted list
+            // or as the first element into an empty sorted list
+            current->pNext = head;
+            head = current;
+        } else {
+            // insert current element into proper position in non-empty sorted list
+            struct LIST * p = head;
+            while(p != NULL) {
+                if(p->pNext == NULL || // last element of the sorted list
+                   current->iValue < p->pNext->iValue) // middle of the list
+                {
+                    // insert into middle of the sorted list or as the last element
+                    current->pNext = p->pNext;
+                    p->pNext = current;
+                    break; // done
+                }
+                p = p->pNext;
+            }
+        }
+    }
+    return head;
+}</pre>
       </div>
       <div id="tabs-2">
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+        <p>Merge sort takes advantage of the ease of merging already sorted lists into a new sorted list. It starts by comparing every two elements and swapping
+         them if the first should come after the second. It then merges each of the resulting lists of two into lists of four, then merges those lists of four, and
+          so on; until at last two lists are merged into the final sorted list. Of the algorithms described here, this is the first that scales well to very large
+           lists, because its worst-case running time is O(n log n). It is also easily applied to lists, not only arrays, as it only requires sequential
+            access, not random access. However, it has additional O(n) space complexity, and involves a large number of copies in simple implementations.</p>
+            <p>Sudo code algorithm for merge sort</p>
+            <pre># split in half
+m = n / 2
+
+# recursive sorts
+sort a[1..m]
+sort a[m+1..n]
+
+# merge sorted sub-arrays using temp array
+b = copy of a[1..m]
+i = 1, j = m+1, k = 1
+while i <= m and j <= n,
+    a[k++] = (a[j] < b[i]) ? a[j++] : b[i++]
+    → invariant: a[1..k] in final position
+while i <= m,
+    a[k++] = b[i++]
+    → invariant: a[1..k] in final position
+</pre>
       </div>
       <div id="tabs-3">
-        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        <p>Quicksort is a divide and conquer algorithm which relies on a partition operation: to partition an array an element called a pivot is selected. All elements smaller than the pivot are moved before it and all greater elements are moved after it. The lesser and greater sublists are then recursively sorted. This yields average time complexity of O(n log n), with low overhead, and thus this is a popular algorithm. In efficient implementations it is not a stable sort, meaning that the relative order of equal sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional amounts of memory to perform the sorting.</p>
+        <p>Sudo code algorithm for quicksort</p>
+        <pre># choose pivot
+swap a[1,rand(1,n)]
+
+# 2-way partition
+k = 1
+for i = 2:n, if a[i] < a[1], swap a[++k,i]
+swap a[1,k]
+→ invariant: a[1..k-1] < a[k] <= a[k+1..n]
+
+# recursive sorts
+sort a[1..k-1]
+sort a[k+1,n]</pre>
+
+        <p>There are many different types of implementations for the quick sort algorithm, many involve different ways to setup the partitions. One of them involves
+          dividing into a 3-way partition, shown in the following sudo code.</p>
+          <pre># choose pivot
+swap a[n,rand(1,n)]
+
+# 3-way partition
+i = 1, k = 1, p = n
+while i < p,
+  if a[i] < a[n], swap a[i++,k++]
+  else if a[i] == a[n], swap a[i,--p]
+  else i++
+end
+→ invariant: a[p..n] all equal
+→ invariant: a[1..k-1] < a[p..n] < a[k..p-1]
+
+# move pivots to center
+m = min(p-k,n-p+1)
+swap a[k..k+m-1,n-m+1..n]
+
+# recursive sorts
+sort a[1..k-1]
+sort a[n-p+k+1,n]</pre>
+        
+        <p>Shown in the following table is a comparison between the two variations.</p>
+        <p>First Quick sort</p>
+        <ul>
+          <li>Not stable</li>
+          <li>O(lg(n)) extra space</li>
+          <li>O(n&sup2;) time, but typically O(n·lg(n)) time</li>
+          <li>Not adaptive</li>
+        </ul>
+        <p>Second Quick sort</p>
+        <ul>
+          <li>Not stable</li>
+          <li>O(lg(n)) extra space</li>
+          <li>O(n&sup2;) time, but typically O(n·lg(n)) time</li>
+          <li>Adaptive: O(n) time when O(1) unique keys</li>
+        </ul>
       </div>
     </div>
 
