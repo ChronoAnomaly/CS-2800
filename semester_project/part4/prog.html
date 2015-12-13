@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Progressbar Widget</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
+  <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+  <script>
+  $(function() {
+    var progressTimer,
+      progressbar = $( "#progressbar" ),
+      progressLabel = $( ".progress-label" ),
+      dialogButtons = [{
+        text: "Cancel Download",
+        click: closeDownload
+      }],
+      dialog = $( "#dialog" ).dialog({
+        autoOpen: false,
+        closeOnEscape: false,
+        resizable: false,
+        buttons: dialogButtons,
+        open: function() {
+          progressTimer = setTimeout( progress, 2000 );
+        },
+        beforeClose: function() {
+          downloadButton.button( "option", {
+            disabled: false,
+            label: "Start Download"
+          });
+        }
+      }),
+      downloadButton = $( "#downloadButton" )
+        .button()
+        .on( "click", function() {
+          $( this ).button( "option", {
+            disabled: true,
+            label: "Downloading..."
+          });
+          dialog.dialog( "open" );
+        });
+ 
+    progressbar.progressbar({
+      value: false,
+      max: 1024,
+      change: function() {
+        progressLabel.text( "Current Progress: " + progressbar.progressbar( "value" ) + "%" );
+      },
+      complete: function() {
+        progressLabel.text( "Complete!" );
+        dialog.dialog( "option", "buttons", [{
+          text: "Close",
+          click: closeDownload
+        }]);
+        $(".ui-dialog button").last().focus();
+      }
+    });
+ 
+    function progress() {
+      var val = progressbar.progressbar( "value" ) || 0;
+ 
+      progressbar.progressbar( "value", val + Math.floor( Math.random() * 3 ) );
+ 
+      if ( val <= 1024 ) {
+        progressTimer = setTimeout( progress, 50 );
+      }
+    }
+ 
+    function closeDownload() {
+      clearTimeout( progressTimer );
+      dialog
+        .dialog( "option", "buttons", dialogButtons )
+        .dialog( "close" );
+      progressbar.progressbar( "value", false );
+      progressLabel
+        .text( "Starting download..." );
+      downloadButton.focus();
+    }
+  });
+  </script>
+  <style>
+  #progressbar {
+    margin-top: 20px;
+  }
+ 
+  .progress-label {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+ 
+  .ui-dialog-titlebar-close {
+    display: none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a>   Algorithms</h1>
+  </header>
+  <main>
+    <p>This page is all about downloading. There is a button at the bottom of the page. When it is pressed, it will act like it is proceeding to
+      download a file. No file is actually downloaded, but it is a nice animation.</p>
+    <p>How much progress does this one need? Click the button and find out.</p>
+
+    <div id="dialog" title="File Download">
+      <div class="progress-label">Starting download...</div>
+      <div id="progressbar"></div>
+    </div>
+    <button id="downloadButton">Start Download</button>
+
+  </main>
+  <footer>
+    <p>Brett Worley</p>
+    <p>CS-2800-01</p>
+  </footer>
+
+</body>
+</html>

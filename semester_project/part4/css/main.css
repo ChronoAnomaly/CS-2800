@@ -17,3 +17,8 @@ pre {
   font-size: .8em;
   padding-left: 1em;
 }
+
+footer p {
+  margin: 0;
+  text-align: right;
+}

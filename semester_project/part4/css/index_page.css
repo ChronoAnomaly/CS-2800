@@ -1,0 +1,39 @@
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  border: 1px red solid;
+  background-color: #E9E9E9;
+}
+
+
+main {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 3em;
+  -webkit-column-gap: 3em;
+  column-gap: 3em;
+}
+
+main ul {
+  list-style: none;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+main img {
+  width: 60%;
+  margin: 2em 20%;
+}
+
+main h2 {
+  margin: 0 0 -.5em 2em;
+}
+
+footer p {
+  margin: 0;
+  text-align: right;
+}
